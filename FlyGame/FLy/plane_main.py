@@ -86,7 +86,7 @@ class PlaneGame(object):
                 pass
             # 英雄飞机发射子弹
             elif spriteEvent.type == CREATE_BULLET_EVENT:
-                self.hero.fire(HERO_FIRE_NORMEL)
+                self.hero.fire(HERO_FIRE_SUPER)
                 self.hero
                 pass
 
@@ -181,6 +181,7 @@ class PlaneGame(object):
         print(PlaneGame)
 
 
+# 程序运行入口
 if __name__ == '__main__':
     game = PlaneGame()
     game.game_start()
