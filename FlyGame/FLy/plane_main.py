@@ -51,6 +51,11 @@ class PlaneGame(object):
         # 3.2 创建英雄精灵组
         self.heroGroup = pygame.sprite.Group(self.hero)
 
+        # 4.1 创建gameover
+        self.gameOver = Over()
+        # 4.2 创建gameover精灵组
+        self.gameOverGroup = pygame.sprite.Group(self.gameOver)
+
     def game_start(self):
         """
         开始游戏
@@ -118,8 +123,15 @@ class PlaneGame(object):
         elif self.keys_pressed[pygame.K_d]:  # →
             self.hero.move(HERO_MOVE_R)
             pass
+        elif self.keys_pressed[pygame.K_0]:  # 重来
+            game = PlaneGame()
+            game.game_start()
+        elif self.keys_pressed[pygame.K_ESCAPE]:  #退出
+            exit()
         else:
             pass
+
+
 
     def __check_collide(self):
         """
@@ -127,14 +139,19 @@ class PlaneGame(object):
         :return:
         """
         # 1. 子弹精灵组与敌机精灵组碰撞检测并湮灭
-        pygame.sprite.groupcollide(self.hero.bulletGroup, self.enemyGroup, True, True)
+        # pygame.sprite.groupcollide(self.hero.bulletGroup, self.enemyGroup, True, True)
+        for enemy in self.enemyGroup:
+            bullets = pygame.sprite.spritecollide(enemy, self.hero.bulletGroup, True)
+            if len(bullets) > 0:
+                enemy.animation(pygame.time.get_ticks())
 
         # 2. 英雄飞机与敌机精灵组碰撞检测并湮灭
         enemys = pygame.sprite.spritecollide(self.hero, self.enemyGroup, True)
         if len(enemys) > 0:
-            self.hero.kill()  # 英雄飞机牺牲
-            PlaneGame.__game_over()  # 游戏结束
-        pass
+            self.hero.dead()  # 英雄飞机牺牲
+
+            self.gameOver.show()
+            pass
 
     def __update_sprites(self):
         """
@@ -147,17 +164,24 @@ class PlaneGame(object):
         self.bgGroup.draw(self.screen)
 
         # 2.1 敌机精灵组更新
-        self.enemyGroup.update()
+        self.enemyGroup.update(pygame.time.get_ticks())
         # 2.2 敌机精灵组绘制
         self.enemyGroup.draw(self.screen)
 
         # 3.1 英雄精灵组更新
-        self.heroGroup.update()
+        self.heroGroup.update(pygame.time.get_ticks())
         # 3.2 英雄精灵组绘制
         self.heroGroup.draw(self.screen)
 
+        # 3.1.1 英雄子弹更新
         self.hero.bulletGroup.update()
+        # 3.2.2 英雄子弹绘制
         self.hero.bulletGroup.draw(self.screen)
+
+        # 4.1 结束游戏精灵更新
+        self.gameOverGroup.update()
+        # 4.2 结束游戏精灵绘制
+        self.gameOverGroup.draw(self.screen)
 
     def __game_over(self):
         """
