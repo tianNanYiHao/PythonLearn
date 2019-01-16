@@ -321,6 +321,9 @@ class Bullet(GameSprites):
 
 
 class Over(GameSprites):
+    """
+    结束精灵子类
+    """
 
     def __init__(self):
         super().__init__('../src/images/resume_pressed.png')

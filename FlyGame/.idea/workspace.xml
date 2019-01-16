@@ -11,7 +11,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/FlyGame$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1547611808068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FLy" />
     <SUITE FILE_PATH="coverage/FlyGame$flyTest1.coverage" NAME="flyTest1 Coverage Results" MODIFIED="1547450153717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlyTest" />
-    <SUITE FILE_PATH="coverage/FlyGame$plane_main.coverage" NAME="plane_main Coverage Results" MODIFIED="1547625598610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FLy" />
+    <SUITE FILE_PATH="coverage/FlyGame$plane_main.coverage" NAME="plane_main Coverage Results" MODIFIED="1547626127677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FLy" />
     <SUITE FILE_PATH="coverage/FlyGame$pp.coverage" NAME="pp Coverage Results" MODIFIED="1547198853322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FlyGame$test.coverage" NAME="test Coverage Results" MODIFIED="1547547199282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FLy" />
     <SUITE FILE_PATH="coverage/FlyGame$plane_sprites.coverage" NAME="plane_sprites Coverage Results" MODIFIED="1547451945502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FLy" />
@@ -34,25 +34,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FLy/plane_sprites.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+            <state relative-caret-position="359">
+              <caret line="324" column="10" selection-start-line="324" selection-start-column="10" selection-end-line="324" selection-end-column="10" />
               <folding>
                 <element signature="e#160#173#0" expanded="true" />
                 <element signature="e#1019#1424#0" />
-                <element signature="e#4560#4833#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FLy/plane_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+            <state relative-caret-position="-1089">
+              <caret line="108" column="51" lean-forward="true" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
               <folding>
                 <element signature="e#158#178#0" expanded="true" />
               </folding>
@@ -96,8 +95,8 @@
         <option value="$PROJECT_DIR$/FLy/test.py" />
         <option value="$PROJECT_DIR$/FLy/test2.py" />
         <option value="$PROJECT_DIR$/FLy/test4.py" />
-        <option value="$PROJECT_DIR$/FLy/plane_sprites.py" />
         <option value="$PROJECT_DIR$/FLy/plane_main.py" />
+        <option value="$PROJECT_DIR$/FLy/plane_sprites.py" />
       </list>
     </option>
   </component>
@@ -124,17 +123,6 @@
               <item name="FlyGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlyGame" type="462c0819:PsiDirectoryNode" />
               <item name="FLy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlyGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlyGame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlyGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlyGame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -310,12 +298,12 @@
       <workItem from="1547538839071" duration="463000" />
       <workItem from="1547545279872" duration="3851000" />
       <workItem from="1547562127085" duration="612000" />
-      <workItem from="1547602073115" duration="16928000" />
+      <workItem from="1547602073115" duration="17769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49858000" />
+    <option name="totallyTimeSpent" value="50699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1002" extended-state="0" />
@@ -326,7 +314,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21648352" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21648352" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -335,7 +323,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.12527473" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -535,24 +523,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FLy/plane_sprites.py">
+    <entry file="file://$PROJECT_DIR$/FLy/plane_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state relative-caret-position="-1089">
+          <caret line="108" column="51" lean-forward="true" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
           <folding>
-            <element signature="e#160#173#0" expanded="true" />
-            <element signature="e#1019#1424#0" />
-            <element signature="e#4560#4833#0" />
+            <element signature="e#158#178#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FLy/plane_main.py">
+    <entry file="file://$PROJECT_DIR$/FLy/plane_sprites.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+        <state relative-caret-position="359">
+          <caret line="324" column="10" selection-start-line="324" selection-start-column="10" selection-end-line="324" selection-end-column="10" />
           <folding>
-            <element signature="e#158#178#0" expanded="true" />
+            <element signature="e#160#173#0" expanded="true" />
+            <element signature="e#1019#1424#0" />
           </folding>
         </state>
       </provider>
