@@ -235,7 +235,7 @@ class Hero(GameSprites):
         if self.rect.y <= 0:
             self.rect.y = 0
         if self.rect.bottom >= SCREEN_RECT.height:
-            self.rect.bottom = SCREEN_RECT.height
+            self.rect.bottom = SCREEN_RECT.heightgit
 
         if self.rect.x <= 0:
             self.rect.x = 0
