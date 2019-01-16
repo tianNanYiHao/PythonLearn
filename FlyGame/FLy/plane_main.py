@@ -15,6 +15,10 @@ from plane_sprites import *
 class PlaneGame(object):
     """
     飞机大战小游戏
+    上下左右飞行
+    esc退出
+    space发射子弹
+    0重新开始
     """
 
     def __init__(self):
@@ -29,7 +33,7 @@ class PlaneGame(object):
         # 5.设置定时器事件 - 创建敌机 1s
         pygame.time.set_timer(CREATE_ENEMY_EVENT, 1000)
         # 6.设置定时器事件 - 英雄飞机发射子弹 0.5s
-        pygame.time.set_timer(CREATE_BULLET_EVENT, 500)
+        pygame.time.set_timer(CREATE_BULLET_EVENT, 300)
         pass
 
     def __create_sprites(self):
@@ -92,7 +96,6 @@ class PlaneGame(object):
             # 英雄飞机发射子弹
             elif spriteEvent.type == CREATE_BULLET_EVENT:
                 self.hero.fire(HERO_FIRE_SUPER)
-                self.hero
                 pass
 
         # 获取键盘所有按键的元组
@@ -110,6 +113,7 @@ class PlaneGame(object):
             self.hero.move(HERO_MOVE_R)
             pass
 
+
         # 英雄精灵2(player2)的控制
         elif self.keys_pressed[pygame.K_w]:  # ↑
             self.hero.move(HERO_MOVE_UP)
@@ -123,15 +127,18 @@ class PlaneGame(object):
         elif self.keys_pressed[pygame.K_d]:  # →
             self.hero.move(HERO_MOVE_R)
             pass
+
+
+        elif self.keys_pressed[pygame.K_SPACE]:  # 开火
+            # self.hero.fire(HERO_FIRE_SUPER)
+            pass
         elif self.keys_pressed[pygame.K_0]:  # 重来
             game = PlaneGame()
             game.game_start()
-        elif self.keys_pressed[pygame.K_ESCAPE]:  #退出
+        elif self.keys_pressed[pygame.K_ESCAPE]:  # 退出
             exit()
         else:
             pass
-
-
 
     def __check_collide(self):
         """

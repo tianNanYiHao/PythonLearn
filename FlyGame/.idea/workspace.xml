@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6119eeee-67bb-46e2-beb2-e275219a7095" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6119eeee-67bb-46e2-beb2-e275219a7095" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +11,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/FlyGame$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1547611808068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FLy" />
     <SUITE FILE_PATH="coverage/FlyGame$flyTest1.coverage" NAME="flyTest1 Coverage Results" MODIFIED="1547450153717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlyTest" />
-    <SUITE FILE_PATH="coverage/FlyGame$plane_main.coverage" NAME="plane_main Coverage Results" MODIFIED="1547625220719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FLy" />
+    <SUITE FILE_PATH="coverage/FlyGame$plane_main.coverage" NAME="plane_main Coverage Results" MODIFIED="1547625598610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FLy" />
     <SUITE FILE_PATH="coverage/FlyGame$pp.coverage" NAME="pp Coverage Results" MODIFIED="1547198853322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FlyGame$test.coverage" NAME="test Coverage Results" MODIFIED="1547547199282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FLy" />
     <SUITE FILE_PATH="coverage/FlyGame$plane_sprites.coverage" NAME="plane_sprites Coverage Results" MODIFIED="1547451945502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FLy" />
@@ -53,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FLy/plane_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+            <state relative-caret-position="525">
+              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
               <folding>
                 <element signature="e#158#178#0" expanded="true" />
               </folding>
@@ -78,6 +76,8 @@
       <find>self.target_surface</find>
       <find>self.image</find>
       <find>fire</find>
+      <find>elf.hero.fire()</find>
+      <find>fire()</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -310,12 +310,12 @@
       <workItem from="1547538839071" duration="463000" />
       <workItem from="1547545279872" duration="3851000" />
       <workItem from="1547562127085" duration="612000" />
-      <workItem from="1547602073115" duration="16551000" />
+      <workItem from="1547602073115" duration="16928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49481000" />
+    <option name="totallyTimeSpent" value="49858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1002" extended-state="0" />
@@ -549,8 +549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FLy/plane_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+        <state relative-caret-position="525">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
           <folding>
             <element signature="e#158#178#0" expanded="true" />
           </folding>
