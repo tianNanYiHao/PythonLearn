@@ -64,27 +64,27 @@ class HttpServer(object):
         if ret:
             fire_name = ret.group(1)
 
-        try:
-            fire = open('.' + fire_name, 'rb')
-            fire_context = fire.read()
-            fire.close()
+            try:
+                fire = open('.' + fire_name, 'rb')
+                fire_context = fire.read()
+                print(fire_context)
+                fire.close()
 
-            # 拼装返回数据格式
-            response = 'HTTP/1.1 200 OK\r\n'
-            response += '\r\n'
-            # 发送返回数据
-            client_socket.send(response.encode('utf-8'))
-            client_socket.send(fire_context)
+                # 拼装返回数据格式
+                response = 'HTTP/1.1 200 OK\r\n'
+                response += '\r\n'
+                # 发送返回数据
+                client_socket.send(response.encode('utf-8'))
+                client_socket.send(fire_context)
 
-        except:
-            response = 'HTTP/1.1 404 NOT FOUND\r\n'
-            response += '\r\n'
-            response += '<p>别找了兄逮, 服务器没你要的数据</p>'
-            client_socket.send(response.encode('gb2312'))
+            except:
+                response = 'HTTP/1.1 404 NOT FOUND\r\n'
+                response += '\r\n'
+                response += '<p>别找了兄逮, 服务器没你要的数据</p>'
+                client_socket.send(response.encode('gb2312'))
 
-        # 关闭客户端服务
-        client_socket.close()
-        pass
+            # 关闭客户端服务
+            client_socket.close()
 
 
 if __name__ == '__main__':
