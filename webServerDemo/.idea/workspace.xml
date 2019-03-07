@@ -171,23 +171,22 @@
       <updated>1548312789309</updated>
       <workItem from="1548312793641" duration="2615000" />
       <workItem from="1548741452241" duration="5402000" />
-      <workItem from="1551769926596" duration="6185000" />
+      <workItem from="1551769926596" duration="6217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14202000" />
+    <option name="totallyTimeSpent" value="14234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1002" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20695971" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2813187" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2813187" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -196,7 +195,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32967034" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.23186813" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23186813" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
