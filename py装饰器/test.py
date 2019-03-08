@@ -24,27 +24,41 @@ def createName():
 
 
 createName()
-print('*' * 100+'无参装饰器')
-
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 有参数装饰器
+print('*' * 100 + '无参装饰器')
 
 
-def addMidleName(func):
-    def createMidle(firstName, midleName='default'):
-        print('midleName = %s' % midleName)
-        func(firstName)
-
-    return createMidle
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 带有参数的装饰器(重点)
 
 
-@addMidleName
-def addFirstName(firstName):
-    print('firstName = %s' % firstName)
+def set_level_num(level_num):  # 传递数据
+    def set_level_func(func):  # 传递方法
+        def add_level():  # 真正执行被装饰的方法
+            if level_num == 1:
+                print('==== 需要验证等级1的问题 =====')
+            elif level_num == 2:
+                print('==== 需要验证等级2的问题 =====')
+            func()
+
+        return add_level
+
+    return set_level_func
 
 
-# 有参数装饰器使用
-addFirstName('liu')
-print('*' * 100+'有参装饰器')
+@set_level_num(1)
+def testOne():
+    print('------ test 1 -------')
+
+
+@set_level_num(2)
+def tesTwo():
+    print('------ test 2 -------')
+
+
+testOne()
+tesTwo()
+
+print('*' * 100 + '带有参数的装饰器(重点)')
+
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 通用装饰器(多参数+返回值)
 #
@@ -70,7 +84,7 @@ def func_01(name, title, *args):
 
 f = func_01('liu', 'fei', 'fei2', 'fei3')
 print(f)
-print('*' * 100+'通用装饰器(多参数+返回值)')
+print('*' * 100 + '通用装饰器(多参数+返回值)')
 
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 多装饰器
@@ -114,7 +128,7 @@ def test_01():
 
 
 r = test_01()
-print('*' * 100+'多装饰器')
+print('*' * 100 + '多装饰器')
 #
 # # 执行结果如下:
 # # 执行了装饰器03
@@ -125,6 +139,4 @@ print('*' * 100+'多装饰器')
 # # ====== 装饰器03 执行了被装饰函数======
 # # ----------test1----------
 
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 类装饰器
-
-
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 带有参数的装饰器
