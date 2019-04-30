@@ -44,10 +44,10 @@ def login():
 # 遵循 WSGI 协议
 def application(env, start_response):
     start_response('200 ok', [('Content-Type', 'text/html;charset=utf-8')])
-    str = env['path_info']
+    url = env['path_info']
 
     try:
-        func = URL_DICT[str]
+        func = URL_DICT[url]
         return func()
     except Exception as ret:
-        return  '404 not found , 没啥资源可以提供的'
+        return  '404 not found , 没啥资源可以提供的 %s' % str(ret)
