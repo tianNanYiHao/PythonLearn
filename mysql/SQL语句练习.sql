@@ -13,6 +13,9 @@
  	-- 退出数据库
   	exit/quit
 
+  	-- 查看msysql数据库的端口号
+  	show global variables like 'port';
+
   	--sql语句最后需要分号;结尾--
 
   	-- 显示数据库版本
